@@ -2,8 +2,6 @@
 
 [![npm package][npm-badge]][npm]
 
-# fluent-compose
-
 More documentation needed.
 
 ```javascript
