@@ -1,16 +1,33 @@
 # fluent-compose
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe fluent-compose here.
+#fluent-compose
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+More documentation needed.
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+```javascript
+import * as zaphod from 'zaphod/compat';
+import * as lodashFpCollection from 'lodash/fp/collection';
+import { threadFirst, threadLast, fluentCompose } from 'fluent-compose';
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+const zaphodTransform = threadFirst(zaphod);
+const lodashTransform = threadLast(lodashFpCollection);
+
+const transform = fluentCompose({
+  ...zaphodTransform,
+  ...lodashTransform,
+})
+
+const transformer = transform
+  .map(x => x + 2)
+  .filter(x => x % 2)
+  .set(0, 3)
+
+transformer([1,2,3,4]) // [3, 6]
+```
+
+
+[npm-badge]: https://img.shields.io/npm/v/fluent-cmpose.png?style=flat-square
+[npm]: https://www.npmjs.org/package/fluent-cmpose
