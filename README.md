@@ -1,7 +1,6 @@
 # fluent-compose
 
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
 #fluent-compose
 
@@ -29,5 +28,5 @@ transformer([1,2,3,4]) // [3, 6]
 ```
 
 
-[npm-badge]: https://img.shields.io/npm/v/fluent-cmpose.png?style=flat-square
-[npm]: https://www.npmjs.org/package/fluent-cmpose
+[npm-badge]: https://img.shields.io/npm/v/fluent-compose.png?style=flat-square
+[npm]: https://www.npmjs.org/package/fluent-compose
