@@ -2,7 +2,7 @@
 
 [![npm package][npm-badge]][npm]
 
-#fluent-compose
+# fluent-compose
 
 More documentation needed.
 
